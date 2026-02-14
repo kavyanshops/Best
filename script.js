@@ -385,4 +385,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+  // ========== HEART RAIN ON LETTER SECTION ==========
+  const messageSection = document.getElementById('message');
+  let heartRainTriggered = false;
+
+  const heartRainObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !heartRainTriggered) {
+        heartRainTriggered = true;
+        launchHeartRain();
+        heartRainObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  heartRainObserver.observe(messageSection);
+
+  function launchHeartRain() {
+    const hearts = ['❤️', '💖', '💗', '💕', '💝', '🩷', '♥️', '💘'];
+    const count = 250;
+
+    for (let i = 0; i < count; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart-rain-drop';
+      heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.fontSize = (12 + Math.random() * 22) + 'px';
+      heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+      heart.style.animationDelay = (Math.random() * 1) + 's';
+      heart.style.opacity = 0.6 + Math.random() * 0.4;
+      messageSection.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }
+  }
+
 });

@@ -1038,6 +1038,49 @@ body {
   z-index: 10;
 }
 
+/* ---- HEART RAIN EFFECT ---- */
+.heart-rain-drop {
+  position: absolute;
+  top: -30px;
+  pointer-events: none;
+  z-index: 10;
+  animation: heartRainFall ease-in-out forwards;
+}
+
+@keyframes heartRainFall {
+  0% {
+    transform: translateY(-30px) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateY(15vh) rotate(8deg) translateX(10px);
+  }
+
+  40% {
+    transform: translateY(35vh) rotate(-6deg) translateX(-8px);
+  }
+
+  60% {
+    transform: translateY(55vh) rotate(10deg) translateX(12px);
+    opacity: 0.8;
+  }
+
+  80% {
+    transform: translateY(75vh) rotate(-5deg) translateX(-6px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(8deg) translateX(5px);
+    opacity: 0;
+  }
+}
+
 /* ---- MESSAGE / LETTER SECTION ---- */
 .message-section {
   background: linear-gradient(180deg, #FFF5EE, #FFF0F5);

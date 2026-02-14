@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day, Bestie! 💕</title>
+  <meta name="description" content="A heartfelt Valentine's Day celebration of an incredible friendship.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-heart">
+      <i data-lucide="heart" class="loader-icon"></i>
+    </div>
+    <p class="loader-text">A little something for you...</p>
+    <button id="enter-btn" class="enter-btn"><i data-lucide="door-open" class="btn-icon"></i> Tap to Enter</button>
+  </div>
+
+  <!-- Cursor Trail Container -->
+  <div id="cursor-trail"></div>
+
+  <!-- Floating Hearts Background -->
+  <div id="floating-hearts" class="floating-hearts"></div>
+
+  <!-- Snow Hearts -->
+  <div id="snow-hearts" class="snow-hearts"></div>
+
+  <!-- Music Toggle -->
+  <button id="music-toggle" class="music-toggle" aria-label="Toggle Music">
+    <i data-lucide="music" class="music-icon-svg"></i>
+    <div class="music-controls hidden" id="music-controls">
+      <input type="range" id="volume-slider" min="0" max="100" value="30" class="volume-slider">
+    </div>
+  </button>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero" class="hero section">
+    <div class="hero-content">
+      <h1 class="hero-title" id="hero-title">
+        Happy Valentine's Day, <span class="highlight">Yashuuu</span>! 💕
+      </h1>
+      <p class="hero-subtitle fade-in-up">Celebrating the most dhasuuuu friendship</p>
+      <div class="scroll-indicator fade-in-up">
+        <span>Scroll Down</span>
+        <div class="scroll-arrow"><i data-lucide="chevrons-down"></i></div>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <span class="deco-heart dh1"><i data-lucide="heart" class="deco-icon"></i></span>
+      <span class="deco-heart dh2"><i data-lucide="heart-handshake" class="deco-icon"></i></span>
+      <span class="deco-heart dh3"><i data-lucide="sparkles" class="deco-icon"></i></span>
+      <span class="deco-heart dh4"><i data-lucide="flower-2" class="deco-icon"></i></span>
+      <span class="deco-heart dh5"><i data-lucide="star" class="deco-icon"></i></span>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 1: WHY YOU'RE AMAZING ========== -->
+  <section id="compliments" class="section compliments-section">
+    <div class="container">
+      <h2 class="section-title scroll-reveal">Why You're Incredible ✨</h2>
+      <p class="section-subtitle scroll-reveal">Every day you make the world brighter just by being you</p>
+      <div class="flip-cards-grid">
+        <div class="flip-card scroll-reveal" style="--delay: 0.1s">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="card-emoji"><i data-lucide="sparkles"></i></span></div>
+            <div class="flip-card-back">
+              <p>Your laugh doesn’t just light up the room — it probably increases the electricity bill 💀😂</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card scroll-reveal" style="--delay: 0.2s">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="card-emoji"><i data-lucide="star"></i></span></div>
+            <div class="flip-card-back">
+              <p>You always know exactly how to make me smile it’s kinda suspicious, honestly 😭😂</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card scroll-reveal" style="--delay: 0.3s">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="card-emoji"><i data-lucide="wand-sparkles"></i></span></div>
+            <div class="flip-card-back">
+              <p>Your ideas are fire, but you’re still my favorite masterpiece 😮‍💨</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card scroll-reveal" style="--delay: 0.4s">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="card-emoji"><i data-lucide="palette"></i></span></div>
+            <div class="flip-card-back">
+              <p>Aap Meri Gand Bhaut Ache se Bachati ho 😋😘</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card scroll-reveal" style="--delay: 0.5s">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="card-emoji"><i data-lucide="flower"></i></span></div>
+            <div class="flip-card-back">
+              <p>Bhaii Itni Pyarii ha na Tu bas Huggg Karne ka Maan Karta haa 🫂🫀</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card scroll-reveal" style="--delay: 0.6s">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="card-emoji"><i data-lucide="heart"></i></span></div>
+            <div class="flip-card-back">
+              <p>Teri rooh itni khoobsurat hai naaa Bc Uffff 😭🥰</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card scroll-reveal" style="--delay: 0.7s">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="card-emoji"><i data-lucide="shield-check"></i></span></div>
+            <div class="flip-card-back">
+              <p>Tera Himmat haa jo tu mujh ko Sambhal Rahii haa 🙌🙇🏻</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card scroll-reveal" style="--delay: 0.8s">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="card-emoji"><i data-lucide="rainbow"></i></span></div>
+            <div class="flip-card-back">
+              <p>Tere Hone Se Bc Sabb Achaa Achaa Hotaa haa 💋💞</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 2: FAVORITE MEMORIES ========== -->
+  <section id="memories" class="section memories-section">
+    <div class="container">
+      <h2 class="section-title scroll-reveal">Some of My Favorite Moments With You 🌈</h2>
+      <p class="section-subtitle scroll-reveal">Every moment with you becomes a treasure</p>
+    </div>
+    <div class="memories-scroll-wrapper">
+      <div class="memories-track" id="memories-track">
+        <div class="memory-card scroll-reveal" style="--delay: 0.1s">
+          <div class="memory-image">
+            <img src="IMG_1867.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;">
+          </div>
+          <div class="memory-caption">
+            <h3>Milan Moments</h3>
+            <p>Mote se Patle Hone Ke Bad Milnaa of 2 Chutiyas 🤡😂</p>
+          </div>
+        </div>
+        <div class="memory-card scroll-reveal" style="--delay: 0.2s">
+          <div class="memory-image">
+            <img src="IMG_1507.HEIC" alt="" style="width:100%; height:100%; object-fit:cover; display:block;">
+          </div>
+          <div class="memory-caption">
+            <h3>Naya Saal</h3>
+            <p>Naya Saal Ke Pehli Din 2 Genduss 😋😍</p>
+          </div>
+        </div>
+        <div class="memory-card scroll-reveal" style="--delay: 0.3s">
+          <div class="memory-image">
+            <img src="IMG_1881.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;">
+          </div>
+          <div class="memory-caption">
+            <h3>Baddie Moments</h3>
+            <p>Baddies Community Ki Mommy Ka Pehla Step (Looking Fine Shytt Thooo 🥵)</p>
+          </div>
+        </div>
+        <div class="memory-card scroll-reveal" style="--delay: 0.4s">
+          <div class="memory-image">
+            <img src="IMG_1870.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;">
+          </div>
+          <div class="memory-caption">
+            <h3>Kiss Moments</h3>
+            <p>Ye to humkoo bhiii Chaiyee 😭 Humari Khaa haa 😚</p>
+          </div>
+        </div>
+        <div class="memory-card scroll-reveal" style="--delay: 0.5s">
+          <div class="memory-image">
+            <img src="IMG_1872.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;">
+          </div>
+          <div class="memory-caption">
+            <h3>Laal Baal Sundrii</h3>
+            <p>Thukaa Huaa Paan Laga Kar Red Hair Baddie Banne ki Puri Koshish (But vo to Phele Se hi hai 🫠)</p>
+          </div>
+        </div>
+        <div class="memory-card scroll-reveal" style="--delay: 0.6s">
+          <div class="memory-image">
+            <img src="IMG_1879.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;">
+          </div>
+          <div class="memory-caption">
+            <h3>Celebrating Gand Phati Moments</h3>
+            <p>Itni Phatii gaand leke bhii Khush Rehne wali ladki 🫠</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="memories-nav">
+      <button class="mem-nav-btn" id="mem-prev" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+      <button class="mem-nav-btn" id="mem-next" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 3: REASONS YOU'RE MY BEST FRIEND ========== -->
+  <section id="reasons" class="section reasons-section">
+    <div class="container">
+      <h2 class="section-title scroll-reveal">Reasons You're My Best Friend 💛</h2>
+      <p class="section-subtitle scroll-reveal">An ever-growing list of why you're irreplaceable</p>
+      <div class="reasons-grid">
+        <div class="reason-box scroll-reveal" style="--bg: #FFE4E1; --delay: 0.05s">
+          <span class="reason-icon"><i data-lucide="heart"></i></span>
+          <p>Ptaa Nahii Merko Kaise Samajh Jatii Haa</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #FFF0F5; --delay: 0.10s">
+          <span class="reason-icon"><i data-lucide="star"></i></span>
+          <p>Backchodi Partner On Top</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #FFEFD5; --delay: 0.15s">
+          <span class="reason-icon"><i data-lucide="moon"></i></span>
+          <p>Raat Me Bitching Partner</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #E8F5E9; --delay: 0.20s">
+          <span class="reason-icon"><i data-lucide="lightbulb"></i></span>
+          <p>Advise to Bhautt Achii Dete Hoo</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #F3E5F5; --delay: 0.25s">
+          <span class="reason-icon"><i data-lucide="sun"></i></span>
+          <p>Baat Karte hi Mood Ban Jata Ha</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #E3F2FD; --delay: 0.30s">
+          <span class="reason-icon"><i data-lucide="hand-heart"></i></span>
+          <p>Ek Hug To Me Bhi Deserve Kartaa Huu 🥹</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #FFF8E1; --delay: 0.35s">
+          <span class="reason-icon"><i data-lucide="laugh"></i></span>
+          <p>Hasane me On TOp</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #FCE4EC; --delay: 0.40s">
+          <span class="reason-icon"><i data-lucide="music"></i></span>
+          <p>Music Chakhna ka tooo Fireee Haa 🔥</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #E0F7FA; --delay: 0.45s">
+          <span class="reason-icon"><i data-lucide="biceps-flexed"></i></span>
+          <p>Tea Sambhal Kar Rakhne Wali Baddie 😁</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #FFF3E0; --delay: 0.50s">
+          <span class="reason-icon"><i data-lucide="utensils"></i></span>
+          <p>Chatora Pan To Sexxxxy Hi Khaa Doo</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #F1F8E9; --delay: 0.55s">
+          <span class="reason-icon"><i data-lucide="rainbow"></i></span>
+          <p>Merkooo pta nahi Kaise Shambhal Leti Ho 😘</p>
+        </div>
+        <div class="reason-box scroll-reveal" style="--bg: #EDE7F6; --delay: 0.60s">
+          <span class="reason-icon"><i data-lucide="gem"></i></span>
+          <p>Ek Lota Hira Zindgi me 💫💎</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 4: FRIENDSHIP QUIZ ========== -->
+  <section id="quiz" class="section quiz-section">
+    <div class="container">
+      <h2 class="section-title scroll-reveal">Friendship Quiz 🧠💕</h2>
+      <p class="section-subtitle scroll-reveal">How well do we know each other?</p>
+      <div class="quiz-container scroll-reveal" id="quiz-container">
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+        </div>
+        <div class="quiz-question" id="quiz-question">
+          <h3 id="question-text">What's our comfert thing to do</h3>
+          <div class="quiz-options" id="quiz-options">
+            <button class="quiz-option" data-answer="0">Khana Sudnaa</button>
+            <button class="quiz-option" data-answer="1">Bitchiing</button>
+            <button class="quiz-option" data-answer="2">Gedii Marnaaa</button>
+            <button class="quiz-option" data-answer="3">Sab Kuchhh</button>
+          </div>
+        </div>
+        <div class="quiz-result hidden" id="quiz-result">
+          <div class="result-emoji" id="result-emoji">🎉</div>
+          <h3 id="result-text">Amazing!</h3>
+          <p id="result-desc">You really know me so well!</p>
+          <button class="quiz-restart" id="quiz-restart">Play Again 💕</button>
+        </div>
+      </div>
+    </div>
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+  </section>
+
+  <!-- ========== SECTION 5: SPECIAL MESSAGE ========== -->
+  <section id="message" class="section message-section">
+    <div class="container">
+      <h2 class="section-title scroll-reveal">A Letter For You 💌</h2>
+      <div class="letter-frame scroll-reveal">
+        <div class="letter-flourish top-left">❦</div>
+        <div class="letter-flourish top-right">❦</div>
+        <div class="letter-content">
+          <p class="letter-greeting">Dear Best Friend,</p>
+          <p class="letter-body">
+            On this Valentine’s Day, I just want you to know how much you mean to me though something tells me you
+            already do. 😉
+          </p>
+          <p class="letter-body">
+            Our friendship? It’s easily one of the best things in my life. It’s more than just
+            friendship it’s this spark that keeps pulling me closer to you. You’ve been there through my highs, my
+            lows, my late night rants, and those random early morning talks that somehow always end with me smiling
+            because of you.
+          </p>
+          <p class="letter-body">
+            You with me in all my Impulsive decisions, keep me grounded during the chaos, and show me what it means to
+            truly care about
+            someone the kind of care that doesn’t need labels but still feels like love.
+          </p>
+          <p class="letter-body">
+            Thank you for every laugh that’s turned into a late-night memory, every time you’ve made my heart feel a
+            little too comfortable, and every adventure that’s made me wish it wouldn’t end. You make life brighter,
+            warmer, and a lot more interesting.
+            So, here’s to us maybe more than Gandvee friends, definitely something special, and with all the right
+            chemistry for a million more adventures ahead. 💫
+          </p>
+          <p class="letter-sign">With all my love,<br>Your Bitchhh</p>
+        </div>
+        <div class="letter-flourish bottom-left">❦</div>
+        <div class="letter-flourish bottom-right">❦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-message">Here's to many more years of friendship! 💕</p>
+      <div class="footer-hearts">
+        <span><i data-lucide="heart" class="footer-icon"></i></span>
+        <span><i data-lucide="sparkles" class="footer-icon"></i></span>
+        <span><i data-lucide="heart-handshake" class="footer-icon"></i></span>
+        <span><i data-lucide="sparkles" class="footer-icon"></i></span>
+        <span><i data-lucide="heart" class="footer-icon"></i></span>
+      </div>
+      <div class="social-hearts">
+        <a href="#" class="social-heart" aria-label="Share Love" title="Share the love"><i data-lucide="heart"></i></a>
+        <a href="#" class="social-heart" aria-label="Share Joy" title="Share the joy"><i data-lucide="share-2"></i></a>
+        <a href="#" class="social-heart" aria-label="Share Friendship" title="Share your friendship"><i
+            data-lucide="send"></i></a>
+      </div>
+      <p class="footer-credit">Made with love and appreciation | Valentine's Day 2026</p>
+    </div>
+  </footer>
+
+  <!-- Easter Egg Hidden Compliment -->
+  <div id="easter-egg-popup" class="easter-egg-popup hidden">
+    <div class="easter-egg-content">
+      <span class="easter-close" id="easter-close">&times;</span>
+      <p class="easter-emoji"><i data-lucide="trophy" class="easter-icon"></i></p>
+      <p class="easter-text">Secret compliment unlocked! You are one in 8 billion and the universe got it so right when
+        it made you. Never forget that! 💖✨ And Ye loo Chumiiii For Being the Bestestest
+        💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋</p>
+    </div>
+  </div>
+
+  <!-- Audio Element -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="Valentine_spotdown.org.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+
+</html>
